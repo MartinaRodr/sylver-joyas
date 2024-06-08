@@ -9,7 +9,6 @@
     font-family: redhat; 
 }
 
-
 header{
     height: 75px;
     width: 100%;
@@ -23,7 +22,6 @@ header{
     z-index:1000;
 }
 
-
 header ul{
     display: flex;
     flex-direction: row;
@@ -32,7 +30,6 @@ header ul{
     list-style-type: none;
     text-decoration: none;
 } 
-
 
 header .list-item a{
     text-decoration: none;
@@ -163,7 +160,6 @@ footer{
     text-align: center;   
 }
 
-
 .contenedor-h2{
     display: flex;
     justify-content: center;
@@ -174,8 +170,6 @@ footer{
     width: 100%;
     margin: 0;
 }
-
-
 
 .contenedor-h2-con-hr{
     display: flex;
@@ -253,15 +247,12 @@ h2, h3{
     margin-top: 0px;
 }
 
-
-
 .contenedor-h2-con-hr-y-parrafo hr{
     width: 100%;
     border: 2px solid black;
     margin-top: 1px;
     align-items: center;
 } 
-
 
 .contenedor-h2-con-hr-y-parrafo p{
     padding-top: 20px;
@@ -555,8 +546,6 @@ padding-top: 20px;
     display: flex;
 }
 
-
-
 #navbarToggleExternalContent ul{
     display: flex;
     flex-direction: column;
@@ -577,8 +566,6 @@ padding-top: 20px;
    
 }
 
-
-
 @media (max-width: 480px){
     .boton-hamburguesa{
         display: flex;
@@ -586,9 +573,6 @@ padding-top: 20px;
     .desktop-nav{
         display: none;
     }
-
-   
-
 }
 
 
