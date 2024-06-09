@@ -219,12 +219,13 @@ h2, h3{
 
 #formulario{
     display: flex;
-    align-items: center;
     flex-wrap: wrap;
     justify-content: center;
     background-color: rgb(182, 182, 175);
     padding: 15px;
-    flex-direction: column;      
+    flex-direction: column;
+    padding-left: 75px;
+    padding-right: 75px;      
 }
 
 .contenedor-h2-con-hr-y-parrafo{
