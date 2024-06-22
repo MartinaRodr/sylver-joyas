@@ -1,0 +1,12 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: redhat;
+}
+
+@font-face {
+  font-family: redhat;
+  src: url(../tipografia/red-hat-display-variable.ttf);
+}
+
+/*# sourceMappingURL=main.css.map */
