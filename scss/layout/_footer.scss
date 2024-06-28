@@ -1,0 +1,62 @@
+footer{
+    background-color: rgb(182, 182, 175);
+    color: black;
+    padding: 30px;      
+}
+
+.contenedor-de-footer{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin: 0 auto;   
+}
+
+.seccion-de-footer{
+    width: 30%;
+    h6{
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+    p{
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+    ul{
+        list-style: none;
+        padding: 0;
+        li{
+            margin-bottom: 8px;
+            a{
+                color: black;    
+                text-decoration: none;
+                font-weight: 600;
+            }
+            
+        }
+    }    
+}
+
+
+
+.iconos-de-redes{
+    display: flex;
+}
+
+.iconos-de-redes li{
+    margin-right: 10px;
+}
+
+.iconos-de-redes a{
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.iconos-png{
+    width: 40px;
+    height: 40px;
+}
+
+.fin-del-footer{
+    margin-top: 20px;
+    text-align: center;   
+}

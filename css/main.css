@@ -8,5 +8,92 @@
   font-family: redhat;
   src: url(../tipografia/red-hat-display-variable.ttf);
 }
+header {
+  height: 75px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  z-index: 1000;
+}
+header ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  text-decoration: none;
+}
+header ul a {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 800;
+  color: white;
+  padding: 15px;
+}
+
+footer {
+  background-color: rgb(182, 182, 175);
+  color: black;
+  padding: 30px;
+}
+
+.contenedor-de-footer {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.seccion-de-footer {
+  width: 30%;
+}
+.seccion-de-footer h6 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+.seccion-de-footer p {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+.seccion-de-footer ul {
+  list-style: none;
+  padding: 0;
+}
+.seccion-de-footer ul li {
+  margin-bottom: 8px;
+}
+.seccion-de-footer ul li a {
+  color: black;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.iconos-de-redes {
+  display: flex;
+}
+
+.iconos-de-redes li {
+  margin-right: 10px;
+}
+
+.iconos-de-redes a {
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.iconos-png {
+  width: 40px;
+  height: 40px;
+}
+
+.fin-del-footer {
+  margin-top: 20px;
+  text-align: center;
+}
 
 /*# sourceMappingURL=main.css.map */
