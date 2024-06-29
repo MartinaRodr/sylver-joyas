@@ -1,6 +1,6 @@
 footer{
-    background-color: rgb(182, 182, 175);
-    color: black;
+    background-color: $secondary-color;
+    color: $primary-color;
     padding: 30px;      
 }
 
@@ -27,11 +27,10 @@ footer{
         li{
             margin-bottom: 8px;
             a{
-                color: black;    
+                color: $text-color;    
                 text-decoration: none;
                 font-weight: 600;
-            }
-            
+            }            
         }
     }    
 }

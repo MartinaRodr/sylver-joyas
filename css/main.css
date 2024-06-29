@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   font-family: redhat;
 }
 
@@ -9,33 +10,86 @@
   src: url(../tipografia/red-hat-display-variable.ttf);
 }
 header {
-  height: 75px;
-  width: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background-color: black;
-  z-index: 1000;
+  color: rgb(182, 182, 175);
+  padding: 10px 20px;
 }
-header ul {
+header nav {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  list-style-type: none;
-  text-decoration: none;
 }
-header ul a {
-  text-decoration: none;
-  font-size: 18px;
-  font-weight: 800;
-  color: white;
-  padding: 15px;
+header nav .menu-icon {
+  display: flex;
+  align-items: center;
+}
+header nav .menu-icon .page.title {
+  display: none;
+  margin-left: 10px;
+}
+header nav .menu-icon .hamburger-menu {
+  cursor: pointer;
+  display: none;
+}
+header nav .menu-icon .hamburger-menu .bar {
+  width: 25px;
+  height: 3px;
+  background-color: rgb(182, 182, 175);
+  margin: 4px 0;
 }
 
+.nav-links ul {
+  list-style: none;
+  display: flex;
+}
+.nav-links ul li {
+  margin: 0 10px;
+}
+.nav-links ul li a {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s;
+}
+.nav-links ul li a:hover {
+  color: yellow;
+}
+
+.right-section {
+  display: flex;
+  align-items: center;
+}
+.right-section .search-bar {
+  margin-right: 20px;
+}
+.right-section .search-bar input {
+  padding: 5px;
+  border: none;
+  border-radius: 3px;
+}
+
+.login-cart {
+  display: flex;
+  align-items: center;
+}
+.login-cart input {
+  margin: 0 5px;
+  padding: 5px;
+  border: none;
+  border-radius: 3px;
+}
+.login-cart .cart-icon {
+  font-size: 1.5em;
+  margin-left: 10px;
+}
+
+@media (max-width: 768px) {
+  .menu-icon .page-title {
+    display: block;
+  }
+  .menu-icon .hamburger-menu {
+    display: block;
+  }
+}
 footer {
   background-color: rgb(182, 182, 175);
   color: black;

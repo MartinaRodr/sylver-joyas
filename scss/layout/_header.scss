@@ -1,28 +1,81 @@
 header{
-    height: 75px;
-    width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: black;
-    z-index:1000;
-    ul{
+    background-color: $primary-color;
+    color: $secondary-color;
+    padding: 10px 20px;
+    nav{
         display: flex;
-        flex-direction: row;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
-        list-style-type: none;
-        text-decoration: none;
-        a{
-            text-decoration: none;
-            font-size: 18px;
-            font-weight: 800;
-            color: white;
-            padding: 15px;
-            
+        .menu-icon{
+            display: flex;
+            align-items: center;
+            .page.title{
+                display: none;
+                margin-left: 10px;
+            }
+            .hamburger-menu{
+                cursor: pointer;
+                display: none;
+                .bar{
+                    width: 25px;
+                    height: 3px;
+                    background-color: $secondary-color;
+                    margin: 4px 0;
+                }
+            }
         }
-    } 
+    }
+}
+.nav-links{
+    ul{
+        list-style: none;
+        display: flex;
+        li{
+            margin: 0 10px;
+            a{
+                text-decoration: none;
+                color: $secondary-text-color;
+                transition: color 0.3s;
+                &:hover{
+                    color: $accent-color;
+                }
+            }
+        }
+    }
+}
+.right-section{
+    display: flex;
+    align-items: center;
+    .search-bar{
+        margin-right: 20px;
+        input{
+            padding: 5px;
+            border: none;
+            border-radius: 3px;
+        }
+    }
+}
+.login-cart{
+    display: flex;
+    align-items: center;
+    input{
+        margin: 0 5px;
+        padding: 5px;
+        border: none;
+        border-radius: 3px;
+    }
+    .cart-icon{
+        font-size: 1.5em;
+        margin-left: 10px;
+    }
+}
+@media (max-width: 768px) {
+    .menu-icon{
+        .page-title{
+            display: block;
+        }
+        .hamburger-menu{
+            display: block;
+        }
+    }
 }
